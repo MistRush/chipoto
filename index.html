@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChiPo & To – Langoše, Kumpir, Bowl & Toast | Studénka</title>
+    <meta name="description"
+        content="ChiPo & To ve Studénce – čerstvé langoše, kumpir (plněné brambory), bowl pokrmy a toasty. Každý den 14:00 – 22:00. Náměstí republiky 700, Studénka." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka+One&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="Original.png" alt="ChiPo & To Logo" class="nav-logo-img" />
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#nabidka" class="nav-link">Nabídka</a></li>
+                <li><a href="#proc-my" class="nav-link">Proč my?</a></li>
+                <li><a href="#galerie" class="nav-link">Galerie</a></li>
+                <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-img"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">🔥 Street food ve Studénce</div>
+            <h1 class="hero-title">Langoše, Kumpir,<br /><span class="hero-accent">Bowl & Toast</span></h1>
+            <p class="hero-subtitle">Originální street food recepty připravené s láskou.<br />Každý den od <strong>14:00
+                    do 22:00</strong>.</p>
+            <div class="hero-buttons">
+                <a href="#nabidka" class="btn btn-primary" id="hero-menu-btn">📋 Zobrazit menu</a>
+                <a href="#kontakt" class="btn btn-outline" id="hero-contact-btn">📍 Kde nás najdete</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><span class="stat-num">4</span><span class="stat-label">Kategorie jídla</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="stat-num">5</span><span class="stat-label">Druhů omáček</span></div>
+                <div class="stat-divider"></div>
+                <div class="stat"><span class="stat-num">105 Kč</span><span class="stat-label">Od pouhých</span></div>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>Scrolluj dolů</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ==================== PROMO TICKER ==================== -->
+    <div class="promo-banner">
+        <div class="promo-track">
+            <span>🫓 Langoše</span><span class="sep">•</span>
+            <span>🥔 Kumpir</span><span class="sep">•</span>
+            <span>🥣 Bowl</span><span class="sep">•</span>
+            <span>🍞 Toast</span><span class="sep">•</span>
+            <span>🧄 Omáčky</span><span class="sep">•</span>
+            <span>🫓 Langoše</span><span class="sep">•</span>
+            <span>🥔 Kumpir</span><span class="sep">•</span>
+            <span>🥣 Bowl</span><span class="sep">•</span>
+            <span>🍞 Toast</span><span class="sep">•</span>
+            <span>🧄 Omáčky</span><span class="sep">•</span>
+        </div>
+    </div>
+
+    <!-- ==================== NABÍDKA ==================== -->
+    <section class="menu-section" id="nabidka">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nabídka</span>
+                <h2 class="section-title">Co u nás dostanete?</h2>
+                <p class="section-subtitle">Vybírejte z naší nabídky originálních street food pokrmů.</p>
+            </div>
+
+            <div class="menu-tabs" id="menuTabs" role="tablist">
+                <button class="menu-tab active" data-tab="langos" id="tab-langos" role="tab">🫓 Langoše</button>
+                <button class="menu-tab" data-tab="bowl" id="tab-bowl" role="tab">🥣 Bowl</button>
+                <button class="menu-tab" data-tab="kumpir" id="tab-kumpir" role="tab">🥔 Kumpir</button>
+                <button class="menu-tab" data-tab="toast" id="tab-toast" role="tab">🍞 Toast</button>
+                <button class="menu-tab" data-tab="sauce" id="tab-sauce" role="tab">🧄 Omáčky</button>
+            </div>
+
+            <div class="menu-content">
+
+                <!-- LANGOŠE -->
+                <div class="menu-panel active" id="panel-langos" role="tabpanel">
+                    <div class="panel-intro">
+                        <img src="assets/menu_langos.png" alt="Langoše" class="panel-hero-img" />
+                        <div class="panel-intro-text">
+                            <h3>Langoše</h3>
+                            <p>Tradiční smažené těsto z našeho vlastního receptu, křupavé zvenku a nadýchané uvnitř.
+                                Nabízíme tři varianty s různými náplněmi.</p>
+                        </div>
+                    </div>
+                    <div class="menu-grid">
+                        <div class="menu-card" id="item-langos-klasik">
+                            <div class="menu-card-body">
+                                <h3>Klasik</h3>
+                                <p class="ingredients">🧄 Omáčka / sýr / česnek</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">105 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" id="item-langos-masovy">
+                            <div class="menu-card-body">
+                                <h3>Masový</h3>
+                                <p class="ingredients">🥩 Omáčka / sýr / maso</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">105 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card combo-card" id="item-langos-jumbo">
+                            <div class="combo-badge">🔥 JUMBO</div>
+                            <div class="menu-card-body">
+                                <h3>Jumbo</h3>
+                                <p class="ingredients">🥗 Omáčka / sýr / maso / salát</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">105 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BOWL -->
+                <div class="menu-panel" id="panel-bowl" role="tabpanel">
+                    <div class="panel-intro">
+                        <img src="assets/menu_bowl.png" alt="Bowl pokrmy" class="panel-hero-img" />
+                        <div class="panel-intro-text">
+                            <h3>Bowl</h3>
+                            <p>Sytá miska plná dobrot – kombinace smažených pochoutek, omáček a čerstvých surovin. Pro
+                                každou chuť i příležitost.</p>
+                        </div>
+                    </div>
+                    <div class="menu-grid">
+                        <div class="menu-card combo-card" id="item-bowl-amerika">
+                            <div class="combo-badge">🏆 BEST SELLER</div>
+                            <div class="menu-card-body">
+                                <h3>Amerika</h3>
+                                <p class="ingredients">🍞 Toast / 2× stripsy / 4× cibulové kroužky / 4× nugetky /
+                                    hranolky</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">320 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" id="item-bowl-student">
+                            <div class="menu-card-body">
+                                <h3>Bowl Student</h3>
+                                <p class="ingredients">🍟 Hranolky / 2 stripsy / 4 cibulové kroužky / omáčka</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">109 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" id="item-bowl-syr">
+                            <div class="menu-card-body">
+                                <h3>Bowl Sýr</h3>
+                                <p class="ingredients">🧀 Hranolky / 3 druhy smažených sýrů / omáčka</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">105 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" id="item-bowl-fit">
+                            <div class="menu-card-body">
+                                <h3>Fit Bowl</h3>
+                                <p class="ingredients">🥗 Kuřecí grill / rýže / arašídové máslo / rukola</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">229 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" id="item-bowl-sport">
+                            <div class="menu-card-body">
+                                <h3>Sport Bowl</h3>
+                                <p class="ingredients">💪 Trhané maso / rýže / zelenina / fazole</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">Cena na dotaz</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KUMPIR -->
+                <div class="menu-panel" id="panel-kumpir" role="tabpanel">
+                    <div class="panel-intro">
+                        <img src="assets/menu_kumpir.png" alt="Kumpir" class="panel-hero-img" />
+                        <div class="panel-intro-text">
+                            <h3>Kumpir – Plněné brambory</h3>
+                            <p>Velká pečená brambora plněná různými lahodnými ingrediencemi. Sytá pochoutka inspirovaná
+                                tureckou street food tradicí.</p>
+                        </div>
+                    </div>
+                    <div class="menu-grid">
+                        <div class="menu-card combo-card" id="item-kumpir-mexico">
+                            <div class="combo-badge">🌶️ PIKANTNÍ</div>
+                            <div class="menu-card-body">
+                                <h3>Mexico</h3>
+                                <p class="ingredients">🌮 Fazole / cibule / nachos / sýr / maso</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">320 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" id="item-kumpir-istanbul">
+                            <div class="menu-card-body">
+                                <h3>Istanbul</h3>
+                                <p class="ingredients">🫒 Olivy / kys. okurky / kukuřice / salát / klobása</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">109 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" id="item-kumpir-italie">
+                            <div class="menu-card-body">
+                                <h3>Itálie</h3>
+                                <p class="ingredients">🍅 Maso / parmazán / tomatová omáčka</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">105 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" id="item-kumpir-india">
+                            <div class="menu-card-body">
+                                <h3>India <span class="vega-badge">🌿 vega</span></h3>
+                                <p class="ingredients">🌽 Kukuřice / kuřecí maso / zelenina</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">229 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TOAST -->
+                <div class="menu-panel" id="panel-toast" role="tabpanel">
+                    <div class="panel-intro">
+                        <img src="assets/menu_toast.png" alt="Toasty" class="panel-hero-img" />
+                        <div class="panel-intro-text">
+                            <h3>Toast</h3>
+                            <p>Opečené toasty plné sýra a dalších dobrot – každý pojmenovaný po oblíbeném psím plemeni.
+                                Sytá a chutná volba na každou denní dobu.</p>
+                        </div>
+                    </div>
+                    <div class="menu-grid">
+                        <div class="menu-card" id="item-toast-staffy">
+                            <div class="menu-card-body">
+                                <h3>Staffy</h3>
+                                <p class="ingredients">🧀 Sýr / vejce / klobása / párek</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">149 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" id="item-toast-kangal">
+                            <div class="menu-card-body">
+                                <h3>Kangal</h3>
+                                <p class="ingredients">🧀 Sýr / halloumi / klobása / párek</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">169 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card combo-card" id="item-toast-pitbull">
+                            <div class="combo-badge">💪 NEJVĚTŠÍ</div>
+                            <div class="menu-card-body">
+                                <h3>Pitbull</h3>
+                                <p class="ingredients">🥩 Sýr / cibule / vejce / párek / trhané maso</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">179 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" id="item-toast-jackrussell">
+                            <div class="menu-card-body">
+                                <h3>Jack Russell</h3>
+                                <p class="ingredients">🥗 Sýr / rajče / okurek / salát / klobása / párek</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">169 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-card" id="item-toast-jezecvík">
+                            <div class="menu-card-body">
+                                <h3>Jezevčík</h3>
+                                <p class="ingredients">🥓 Sýr / trhané maso / křupavá slanina / vejce / smažená cibulka
+                                    / zelenina</p>
+                                <div class="menu-card-footer">
+                                    <span class="price">169 Kč</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OMÁČKY -->
+                <div class="menu-panel" id="panel-sauce" role="tabpanel">
+                    <div class="panel-intro-center">
+                        <img src="assets/menu_sauce.png" alt="Omáčky" class="panel-hero-img-center" />
+                        <p>Ke každému pokrmu si můžete vybrat z naší nabídky domácích omáček.</p>
+                    </div>
+                    <div class="sauce-grid">
+                        <div class="sauce-card" id="item-sauce-tatarka">
+                            <div class="sauce-icon">🥛</div>
+                            <h3>Tatarka</h3>
+                        </div>
+                        <div class="sauce-card" id="item-sauce-ranch">
+                            <div class="sauce-icon">🌿</div>
+                            <h3>Ranch</h3>
+                        </div>
+                        <div class="sauce-card" id="item-sauce-bbq">
+                            <div class="sauce-icon">🍯</div>
+                            <h3>BBQ</h3>
+                        </div>
+                        <div class="sauce-card" id="item-sauce-cesnek">
+                            <div class="sauce-icon">🧄</div>
+                            <h3>Česnek</h3>
+                        </div>
+                        <div class="sauce-card" id="item-sauce-honeychilli">
+                            <div class="sauce-icon">🌶️</div>
+                            <h3>Honey Chilli</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /menu-content -->
+        </div>
+    </section>
+
+    <!-- ==================== PROČ MY ==================== -->
+    <section class="why-section" id="proc-my">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag red">Proč ChiPo & To?</span>
+                <h2 class="section-title light">Chuť, na kterou nezapomenete</h2>
+                <p class="section-subtitle light">Víme, proč se zákazníci vracejí.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card" id="why-fresh">
+                    <div class="why-icon">🌱</div>
+                    <h3>Čerstvé suroviny</h3>
+                    <p>Každý den nakupujeme čerstvé suroviny. Žádné mražené polotovary.</p>
+                </div>
+                <div class="why-card" id="why-original">
+                    <div class="why-icon">🌍</div>
+                    <h3>Originální recepty</h3>
+                    <p>Inspirace z tureckého a světového street foodu přizpůsobená českému vkusu.</p>
+                </div>
+                <div class="why-card" id="why-fast">
+                    <div class="why-icon">⚡</div>
+                    <h3>Rychlá příprava</h3>
+                    <p>Vaše jídlo připravíme rychle. Protože hlad nečeká.</p>
+                </div>
+                <div class="why-card" id="why-price">
+                    <div class="why-icon">💰</div>
+                    <h3>Skvělá cena</h3>
+                    <p>Výborné jídlo nemusí být drahé. Začínáme již od 105 Kč.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== GALERIE ==================== -->
+    <section class="gallery-section" id="galerie">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Galerie</span>
+                <h2 class="section-title">Podívejte se sami</h2>
+                <p class="section-subtitle">Každý pokrm připravujeme s láskou a pečlivostí.</p>
+            </div>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item large" id="gallery-1">
+                <img src="assets/hero_food_bg.png" alt="Jídla ChiPo & To" />
+                <div class="gallery-label">Street food speciality</div>
+            </div>
+            <div class="gallery-item" id="gallery-2">
+                <img src="assets/menu_langos.png" alt="Langoše" />
+                <div class="gallery-label">Langoše</div>
+            </div>
+            <div class="gallery-item" id="gallery-3">
+                <img src="assets/menu_kumpir.png" alt="Kumpir" />
+                <div class="gallery-label">Kumpir</div>
+            </div>
+            <div class="gallery-item" id="gallery-4">
+                <img src="assets/menu_bowl.png" alt="Bowl" />
+                <div class="gallery-label">Bowl</div>
+            </div>
+            <div class="gallery-item" id="gallery-5">
+                <img src="assets/menu_toast.png" alt="Toast" />
+                <div class="gallery-label">Toast</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== KONTAKT ==================== -->
+    <section class="contact-section" id="kontakt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Kontakt & Otevírací doba</span>
+                <h2 class="section-title">Kde a kdy nás najdete?</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+
+                    <div class="contact-card" id="contact-hours">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <h3>Otevírací doba</h3>
+                            <div class="hours-display">
+                                <div class="hours-days">Každý den</div>
+                                <div class="hours-time">14:00 – 22:00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-card" id="contact-address">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Adresa</h3>
+                            <p>Náměstí republiky 700<br />742 13 Studénka<br />Česká republika</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card" id="contact-phone">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Telefon</h3>
+                            <a href="tel:+420777679010" class="contact-link">+420 777 679 010</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card" id="contact-email">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:info@chipoto.cz" class="contact-link">info@chipoto.cz</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card" id="contact-ico">
+                        <div class="contact-icon">🏢</div>
+                        <div>
+                            <h3>Fakturační údaje</h3>
+                            <p>ChiPo & To<br /><span class="ico-placeholder">IČO: *(doplnit)*</span></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-social" id="contact-social">
+                        <a href="#" class="social-btn" id="btn-instagram" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                            Instagram
+                        </a>
+                        <a href="#" class="social-btn" id="btn-facebook" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                            Facebook
+                        </a>
+                    </div>
+                </div>
+
+                <div class="map-container" id="map-container">
+                    <div class="map-embed-wrapper">
+                        <iframe id="google-map" title="Mapa – ChiPo & To, Studénka"
+                            src="https://maps.google.com/maps?q=N%C3%A1m%C4%9Bst%C3%AD+republiky+700%2C+Stud%C3%A9nka+74213&output=embed"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <a href="https://maps.google.com/?q=Náměstí+republiky+700,+Studénka+74213" target="_blank"
+                        rel="noopener" class="btn btn-primary map-btn" id="btn-maps">
+                        🗺️ Otevřít v Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="Original.png" alt="ChiPo & To" class="footer-logo" />
+                    <p>Originální street food z celého světa připravený s láskou každý den ve Studénce.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#nabidka" id="footer-langos">Langoše</a></li>
+                        <li><a href="#nabidka" id="footer-bowl">Bowl</a></li>
+                        <li><a href="#nabidka" id="footer-kumpir">Kumpir</a></li>
+                        <li><a href="#nabidka" id="footer-toast">Toast</a></li>
+                        <li><a href="#nabidka" id="footer-sauce">Omáčky</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact-block">
+                    <h4>Kontakt</h4>
+                    <p>📍 Nám. republiky 700<br />742 13 Studénka</p>
+                    <p>📞 <a href="tel:+420777679010">+420 777 679 010</a></p>
+                    <p>✉️ <a href="mailto:info@chipoto.cz">info@chipoto.cz</a></p>
+                    <p class="footer-hours">🕐 Každý den 14:00 – 22:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 ChiPo & To – Všechna práva vyhrazena.</p>
+                <p>Provozováno s ❤️ ve Studénce</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#hero" class="back-to-top" id="backToTop" aria-label="Zpět nahoru">↑</a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
