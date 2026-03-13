@@ -799,6 +799,20 @@ img { max-width: 100%; display: block; }
   color: var(--red-light) !important;
   font-weight: 700 !important;
 }
+.footer-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 8px;
+  opacity: 0.8;
+}
+.btn-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
 
 .footer-bottom {
   display: flex;
