@@ -1,0 +1,26 @@
+# Changelog – ChiPo & To (2026-03-13)
+
+### UI & Grafika
+- **Logo**: 
+    - Nasazeno nové logo s plnou průhledností (včetně WebP verze).
+    - Opraveny bílé rámečky a artefakty v logu pomocí programového čištění pixelů.
+    - Logo synchronizováno v navigaci i patičce.
+- **Favicon**: Ikona webu aktualizována na nové průhledné logo.
+- **Menu**: Regenerován obrázek Kumpiru. Původní uměle působící obrázek nahrazen rustikální fotografií na dřevěném stole s hlubokým rozmazáním (bokeh) pro sjednocení stylu nabídky.
+
+### Layout & UX
+- **Sekce Kontakt**:
+    - Kompletní reorganizace pro dosažení kompaktnosti a symetrie.
+    - Informační karty (Adresa, Provozní doba atd.) rozděleny do dvou sloupců (3 řady).
+    - Odstraněno redundantní červené tlačítko „Otevřít v Google Maps“.
+    - Výška mapy (365 px) přesně zarovnána s výškou bloku informací.
+- **Navigace**: Optimalizace chování navigace při scrollování a oprava průhlednosti loga v navbaru.
+
+### SEO & Technické změny
+- **Struktura**: Opravena hierarchie nadpisů (zajištěno pouze jedno H1 na stránku).
+- **Metadata**: Přidány Open Graph tagy pro lepší sdílení na sociálních sítích.
+- **Sémantika**: Přidán soubor `manifest.json` a favicon linky pro lepší mobilní zážitek.
+- **Výkon**: Většina obrázků optimalizována do formátu WebP pro rychlejší načítání.
+
+### Git
+- Všechny změny byly postupně odesílány do hlavního repozitáře (GitHub).
