@@ -76,12 +76,12 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0, rootMargin: '0px 0px 200px 0px' });
 
   revealElements.forEach((el, i) => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(28px)';
-    el.style.transition = `opacity 0.5s ease ${i * 0.06}s, transform 0.5s ease ${i * 0.06}s`;
+    el.style.transition = `opacity 0.5s ease, transform 0.5s ease`;
     revealObserver.observe(el);
   });
 
