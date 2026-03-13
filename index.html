@@ -7,10 +7,9 @@
     <title>ChiPo & To – Langoše, Kumpir, Bowl & Toast | Studénka</title>
     <meta name="description"
         content="ChiPo & To ve Studénce – čerstvé langoše, kumpir (plněné brambory), bowl pokrmy a toasty. Každý den 14:00 – 22:00. Náměstí republiky 700, Studénka." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://api.fontshare.com" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Fredoka+One&display=swap"
+        href="https://api.fontshare.com/v2/css?f[]=neue-montreal@400,500,600,700,800&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -65,16 +64,26 @@
     <!-- ==================== PROMO TICKER ==================== -->
     <div class="promo-banner">
         <div class="promo-track">
-            <span>🫓 Langoše</span><span class="sep">•</span>
-            <span>🥔 Kumpir</span><span class="sep">•</span>
-            <span>🥣 Bowl</span><span class="sep">•</span>
-            <span>🍞 Toast</span><span class="sep">•</span>
-            <span>🧄 Omáčky</span><span class="sep">•</span>
-            <span>🫓 Langoše</span><span class="sep">•</span>
-            <span>🥔 Kumpir</span><span class="sep">•</span>
-            <span>🥣 Bowl</span><span class="sep">•</span>
-            <span>🍞 Toast</span><span class="sep">•</span>
-            <span>🧄 Omáčky</span><span class="sep">•</span>
+            <span class="promo-item"><img src="assets/menu_langos.png" class="promo-img" alt=""> Langoše</span><span class="sep">•</span>
+            <span class="promo-item"><img src="assets/menu_kumpir.png" class="promo-img" alt=""> Kumpir</span><span class="sep">•</span>
+            <span class="promo-item"><img src="assets/menu_bowl.png" class="promo-img" alt=""> Bowl</span><span class="sep">•</span>
+            <span class="promo-item"><img src="assets/menu_toast.png" class="promo-img" alt=""> Toast</span><span class="sep">•</span>
+            <span class="promo-item"><img src="assets/menu_sauce.png" class="promo-img" alt=""> Omáčky</span><span class="sep">•</span>
+            <span class="promo-item"><img src="assets/menu_langos.png" class="promo-img" alt=""> Langoše</span><span class="sep">•</span>
+            <span class="promo-item"><img src="assets/menu_kumpir.png" class="promo-img" alt=""> Kumpir</span><span class="sep">•</span>
+            <span class="promo-item"><img src="assets/menu_bowl.png" class="promo-img" alt=""> Bowl</span><span class="sep">•</span>
+            <span class="promo-item"><img src="assets/menu_toast.png" class="promo-img" alt=""> Toast</span><span class="sep">•</span>
+            <span class="promo-item"><img src="assets/menu_sauce.png" class="promo-img" alt=""> Omáčky</span><span class="sep">•</span>
+            <span class="promo-item"><img src="assets/menu_langos.png" class="promo-img" alt=""> Langoše</span><span class="sep">•</span>
+            <span class="promo-item"><img src="assets/menu_kumpir.png" class="promo-img" alt=""> Kumpir</span><span class="sep">•</span>
+            <span class="promo-item"><img src="assets/menu_bowl.png" class="promo-img" alt=""> Bowl</span><span class="sep">•</span>
+            <span class="promo-item"><img src="assets/menu_toast.png" class="promo-img" alt=""> Toast</span><span class="sep">•</span>
+            <span class="promo-item"><img src="assets/menu_sauce.png" class="promo-img" alt=""> Omáčky</span><span class="sep">•</span>
+            <span class="promo-item"><img src="assets/menu_langos.png" class="promo-img" alt=""> Langoše</span><span class="sep">•</span>
+            <span class="promo-item"><img src="assets/menu_kumpir.png" class="promo-img" alt=""> Kumpir</span><span class="sep">•</span>
+            <span class="promo-item"><img src="assets/menu_bowl.png" class="promo-img" alt=""> Bowl</span><span class="sep">•</span>
+            <span class="promo-item"><img src="assets/menu_toast.png" class="promo-img" alt=""> Toast</span><span class="sep">•</span>
+            <span class="promo-item"><img src="assets/menu_sauce.png" class="promo-img" alt=""> Omáčky</span><span class="sep">•</span>
         </div>
     </div>
 
@@ -87,18 +96,18 @@
                 <p class="section-subtitle">Vybírejte z naší nabídky originálních street food pokrmů.</p>
             </div>
 
-            <div class="menu-tabs" id="menuTabs" role="tablist">
-                <button class="menu-tab active" data-tab="langos" id="tab-langos" role="tab">🫓 Langoše</button>
-                <button class="menu-tab" data-tab="bowl" id="tab-bowl" role="tab">🥣 Bowl</button>
-                <button class="menu-tab" data-tab="kumpir" id="tab-kumpir" role="tab">🥔 Kumpir</button>
-                <button class="menu-tab" data-tab="toast" id="tab-toast" role="tab">🍞 Toast</button>
-                <button class="menu-tab" data-tab="sauce" id="tab-sauce" role="tab">🧄 Omáčky</button>
+            <div class="menu-nav" id="menuTabs">
+                <a class="menu-nav-link" href="#panel-langos"><img src="assets/menu_langos.png" class="tab-img" alt=""> Langoše</a>
+                <a class="menu-nav-link" href="#panel-bowl"><img src="assets/menu_bowl.png" class="tab-img" alt=""> Bowl</a>
+                <a class="menu-nav-link" href="#panel-kumpir"><img src="assets/menu_kumpir.png" class="tab-img" alt=""> Kumpir</a>
+                <a class="menu-nav-link" href="#panel-toast"><img src="assets/menu_toast.png" class="tab-img" alt=""> Toast</a>
+                <a class="menu-nav-link" href="#panel-sauce"><img src="assets/menu_sauce.png" class="tab-img" alt=""> Omáčky</a>
             </div>
 
             <div class="menu-content">
 
                 <!-- LANGOŠE -->
-                <div class="menu-panel active" id="panel-langos" role="tabpanel">
+                <div class="menu-panel" id="panel-langos">
                     <div class="panel-intro">
                         <img src="assets/menu_langos.png" alt="Langoše" class="panel-hero-img" />
                         <div class="panel-intro-text">
@@ -140,7 +149,7 @@
                 </div>
 
                 <!-- BOWL -->
-                <div class="menu-panel" id="panel-bowl" role="tabpanel">
+                <div class="menu-panel" id="panel-bowl">
                     <div class="panel-intro">
                         <img src="assets/menu_bowl.png" alt="Bowl pokrmy" class="panel-hero-img" />
                         <div class="panel-intro-text">
@@ -201,7 +210,7 @@
                 </div>
 
                 <!-- KUMPIR -->
-                <div class="menu-panel" id="panel-kumpir" role="tabpanel">
+                <div class="menu-panel" id="panel-kumpir">
                     <div class="panel-intro">
                         <img src="assets/menu_kumpir.png" alt="Kumpir" class="panel-hero-img" />
                         <div class="panel-intro-text">
@@ -252,7 +261,7 @@
                 </div>
 
                 <!-- TOAST -->
-                <div class="menu-panel" id="panel-toast" role="tabpanel">
+                <div class="menu-panel" id="panel-toast">
                     <div class="panel-intro">
                         <img src="assets/menu_toast.png" alt="Toasty" class="panel-hero-img" />
                         <div class="panel-intro-text">
@@ -313,30 +322,30 @@
                 </div>
 
                 <!-- OMÁČKY -->
-                <div class="menu-panel" id="panel-sauce" role="tabpanel">
+                <div class="menu-panel" id="panel-sauce">
                     <div class="panel-intro-center">
                         <img src="assets/menu_sauce.png" alt="Omáčky" class="panel-hero-img-center" />
                         <p>Ke každému pokrmu si můžete vybrat z naší nabídky domácích omáček.</p>
                     </div>
                     <div class="sauce-grid">
                         <div class="sauce-card" id="item-sauce-tatarka">
-                            <div class="sauce-icon">🥛</div>
+                            <div class="sauce-icon"><i data-lucide="droplets"></i></div>
                             <h3>Tatarka</h3>
                         </div>
                         <div class="sauce-card" id="item-sauce-ranch">
-                            <div class="sauce-icon">🌿</div>
+                            <div class="sauce-icon"><i data-lucide="leaf"></i></div>
                             <h3>Ranch</h3>
                         </div>
                         <div class="sauce-card" id="item-sauce-bbq">
-                            <div class="sauce-icon">🍯</div>
+                            <div class="sauce-icon"><i data-lucide="flame"></i></div>
                             <h3>BBQ</h3>
                         </div>
                         <div class="sauce-card" id="item-sauce-cesnek">
-                            <div class="sauce-icon">🧄</div>
+                            <div class="sauce-icon"><i data-lucide="sprout"></i></div>
                             <h3>Česnek</h3>
                         </div>
                         <div class="sauce-card" id="item-sauce-honeychilli">
-                            <div class="sauce-icon">🌶️</div>
+                            <div class="sauce-icon"><i data-lucide="zap"></i></div>
                             <h3>Honey Chilli</h3>
                         </div>
                     </div>
@@ -356,22 +365,22 @@
             </div>
             <div class="why-grid">
                 <div class="why-card" id="why-fresh">
-                    <div class="why-icon">🌱</div>
+                    <div class="why-icon"><i data-lucide="leaf"></i></div>
                     <h3>Čerstvé suroviny</h3>
                     <p>Každý den nakupujeme čerstvé suroviny. Žádné mražené polotovary.</p>
                 </div>
                 <div class="why-card" id="why-original">
-                    <div class="why-icon">🌍</div>
+                    <div class="why-icon"><i data-lucide="globe"></i></div>
                     <h3>Originální recepty</h3>
                     <p>Inspirace z tureckého a světového street foodu přizpůsobená českému vkusu.</p>
                 </div>
                 <div class="why-card" id="why-fast">
-                    <div class="why-icon">⚡</div>
+                    <div class="why-icon"><i data-lucide="zap"></i></div>
                     <h3>Rychlá příprava</h3>
                     <p>Vaše jídlo připravíme rychle. Protože hlad nečeká.</p>
                 </div>
                 <div class="why-card" id="why-price">
-                    <div class="why-icon">💰</div>
+                    <div class="why-icon"><i data-lucide="banknote"></i></div>
                     <h3>Skvělá cena</h3>
                     <p>Výborné jídlo nemusí být drahé. Začínáme již od 105 Kč.</p>
                 </div>
@@ -423,7 +432,7 @@
                 <div class="contact-info">
 
                     <div class="contact-card" id="contact-hours">
-                        <div class="contact-icon">🕐</div>
+                        <div class="contact-icon"><i data-lucide="clock"></i></div>
                         <div>
                             <h3>Otevírací doba</h3>
                             <div class="hours-display">
@@ -434,7 +443,7 @@
                     </div>
 
                     <div class="contact-card" id="contact-address">
-                        <div class="contact-icon">📍</div>
+                        <div class="contact-icon"><i data-lucide="map-pin"></i></div>
                         <div>
                             <h3>Adresa</h3>
                             <p>Náměstí republiky 700<br />742 13 Studénka<br />Česká republika</p>
@@ -442,7 +451,7 @@
                     </div>
 
                     <div class="contact-card" id="contact-phone">
-                        <div class="contact-icon">📞</div>
+                        <div class="contact-icon"><i data-lucide="phone"></i></div>
                         <div>
                             <h3>Telefon</h3>
                             <a href="tel:+420777679010" class="contact-link">+420 777 679 010</a>
@@ -450,7 +459,7 @@
                     </div>
 
                     <div class="contact-card" id="contact-email">
-                        <div class="contact-icon">✉️</div>
+                        <div class="contact-icon"><i data-lucide="mail"></i></div>
                         <div>
                             <h3>Email</h3>
                             <a href="mailto:info@chipoto.cz" class="contact-link">info@chipoto.cz</a>
@@ -458,7 +467,7 @@
                     </div>
 
                     <div class="contact-card" id="contact-ico">
-                        <div class="contact-icon">🏢</div>
+                        <div class="contact-icon"><i data-lucide="building-2"></i></div>
                         <div>
                             <h3>Fakturační údaje</h3>
                             <p>ChiPo & To<br /><span class="ico-placeholder">IČO: *(doplnit)*</span></p>
@@ -535,7 +544,9 @@
 
     <a href="#hero" class="back-to-top" id="backToTop" aria-label="Zpět nahoru">↑</a>
 
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
 </body>
 
 </html>

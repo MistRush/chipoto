@@ -30,7 +30,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Neue Montreal', sans-serif;
   background: var(--dark);
   color: var(--white);
   overflow-x: hidden;
@@ -196,7 +196,7 @@ img { max-width: 100%; display: block; }
   50% { box-shadow: 0 0 0 12px rgba(193,40,45,0); }
 }
 .hero-title {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Neue Montreal', sans-serif;
   font-size: clamp(2.4rem, 6vw, 4.5rem);
   line-height: 1.1;
   margin-bottom: 20px;
@@ -229,7 +229,7 @@ img { max-width: 100%; display: block; }
 .stat { text-align: center; }
 .stat-num {
   display: block;
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Neue Montreal', sans-serif;
   font-size: 1.8rem;
   color: var(--red);
   line-height: 1;
@@ -292,6 +292,20 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.04em;
   color: var(--white);
 }
+.promo-item {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px;
+}
+.promo-img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  display: block;
+  border: 1.5px solid rgba(255,255,255,0.35);
+}
 .promo-track .sep { opacity: 0.5; }
 @keyframes ticker {
   0% { transform: translateX(0); }
@@ -322,7 +336,7 @@ img { max-width: 100%; display: block; }
   border-color: rgba(193,40,45,0.3);
 }
 .section-title {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Neue Montreal', sans-serif;
   font-size: clamp(1.8rem, 4vw, 2.8rem);
   color: var(--white);
   margin-bottom: 12px;
@@ -338,7 +352,7 @@ img { max-width: 100%; display: block; }
 
 /* ---------- MENU SECTION ---------- */
 .menu-section {
-  padding: 100px 0;
+  padding: 56px 0 100px;
   background: var(--dark);
 }
 
@@ -349,7 +363,20 @@ img { max-width: 100%; display: block; }
   flex-wrap: wrap;
   margin-bottom: 48px;
 }
-.menu-tab {
+.menu-nav {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+  position: sticky;
+  top: 64px;
+  z-index: 100;
+  background: var(--dark);
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.menu-nav-link {
   padding: 10px 22px;
   border-radius: 50px;
   border: 2px solid rgba(255,255,255,0.12);
@@ -360,24 +387,31 @@ img { max-width: 100%; display: block; }
   font-size: 0.9rem;
   cursor: pointer;
   transition: all var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
 }
-.menu-tab:hover {
+.menu-nav-link:hover {
   border-color: var(--red);
   color: var(--white);
+  background: rgba(193,40,45,0.08);
 }
-.menu-tab.active {
-  background: var(--red);
-  border-color: var(--red);
-  color: var(--white);
-  box-shadow: 0 4px 20px rgba(193,40,45,0.35);
+.tab-img {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  display: block;
 }
 
-.menu-panel { display: none; animation: fadeUp 0.4s ease; }
-.menu-panel.active { display: block; }
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+.menu-panel {
+  display: block;
+  margin-bottom: 64px;
+  scroll-margin-top: 140px;
 }
+.menu-panel:last-child { margin-bottom: 0; }
 
 .panel-intro {
   display: grid;
@@ -399,7 +433,7 @@ img { max-width: 100%; display: block; }
   padding: 32px 32px 32px 0;
 }
 .panel-intro-text h3 {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Neue Montreal', sans-serif;
   font-size: 2rem;
   color: var(--red);
   margin-bottom: 10px;
@@ -441,7 +475,7 @@ img { max-width: 100%; display: block; }
   padding: 24px;
 }
 .menu-card-body h3 {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Neue Montreal', sans-serif;
   font-size: 1.3rem;
   color: var(--white);
   margin-bottom: 8px;
@@ -460,7 +494,7 @@ img { max-width: 100%; display: block; }
   border-top: 1px solid rgba(255,255,255,0.06);
 }
 .price {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Neue Montreal', sans-serif;
   font-size: 1.4rem;
   color: var(--red);
 }
@@ -485,7 +519,7 @@ img { max-width: 100%; display: block; }
   padding: 2px 8px;
   border-radius: 50px;
   font-weight: 700;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Neue Montreal', sans-serif;
 }
 
 /* SAUCE GRID */
@@ -508,13 +542,19 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 8px 30px rgba(26,86,219,0.2);
 }
 .sauce-icon {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
-  display: block;
-  line-height: 1;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: center;
+}
+.sauce-icon svg {
+  width: 44px;
+  height: 44px;
+  stroke: var(--red-light);
+  stroke-width: 1.5;
+  fill: none;
 }
 .sauce-card h3 {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Neue Montreal', sans-serif;
   font-size: 1.1rem;
   color: var(--white);
   margin-bottom: 6px;
@@ -556,12 +596,19 @@ img { max-width: 100%; display: block; }
   border-color: rgba(255,255,255,0.25);
 }
 .why-icon {
-  font-size: 3rem;
-  margin-bottom: 16px;
-  display: block;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.why-icon svg {
+  width: 52px;
+  height: 52px;
+  stroke: rgba(255,255,255,0.92);
+  stroke-width: 1.5;
+  fill: none;
 }
 .why-card h3 {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Neue Montreal', sans-serif;
   font-size: 1.25rem;
   margin-bottom: 10px;
   color: var(--white);
@@ -642,9 +689,10 @@ img { max-width: 100%; display: block; }
   border-color: var(--blue);
   transform: translateX(4px);
 }
-.contact-icon { font-size: 1.8rem; flex-shrink: 0; margin-top: 2px; }
+.contact-icon { flex-shrink: 0; margin-top: 4px; display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; background: rgba(59,112,240,0.12); border-radius: 10px; }
+.contact-icon svg { width: 20px; height: 20px; stroke: var(--blue-light); stroke-width: 1.75; fill: none; }
 .contact-card h3 {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Neue Montreal', sans-serif;
   font-size: 1rem;
   color: var(--blue-light);
   margin-bottom: 6px;
@@ -661,7 +709,7 @@ img { max-width: 100%; display: block; }
 .hours-display { margin-top: 4px; }
 .hours-days { color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-bottom: 2px; }
 .hours-time {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Neue Montreal', sans-serif;
   font-size: 1.6rem;
   color: var(--white);
 }
@@ -723,7 +771,7 @@ img { max-width: 100%; display: block; }
 .footer-logo { height: 56px; width: auto; }
 
 .footer-links h4, .footer-contact-block h4 {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Neue Montreal', sans-serif;
   font-size: 1.1rem;
   color: var(--white);
   margin-bottom: 18px;

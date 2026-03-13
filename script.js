@@ -52,37 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ---------- MENU TABS ----------
-  const tabs = document.querySelectorAll('.menu-tab');
-  const panels = document.querySelectorAll('.menu-panel');
-
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      const target = tab.dataset.tab;
-
-      tabs.forEach(t => t.classList.remove('active'));
-      panels.forEach(p => p.classList.remove('active'));
-
-      tab.classList.add('active');
-      const targetPanel = document.getElementById('panel-' + target);
-      if (targetPanel) targetPanel.classList.add('active');
-    });
-  });
-
-  // ---------- SMOOTH SCROLL for footer menu links ----------
-  // When clicking footer Nabídka links, also activate correct tab
-  const footerLinks = {
-    'footer-langos': 'langos',
-    'footer-bowl': 'bowl',
-    'footer-kumpir': 'kumpir',
-    'footer-toast': 'toast',
-    'footer-sauce': 'sauce',
-  };
-  Object.entries(footerLinks).forEach(([id, tab]) => {
-    document.getElementById(id)?.addEventListener('click', () => {
-      setTimeout(() => {
-        document.querySelector(`[data-tab="${tab}"]`)?.click();
-      }, 500);
+  // ---------- SMOOTH SCROLL for anchor links ----------
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     });
   });
 
