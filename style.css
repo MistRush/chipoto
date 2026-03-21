@@ -497,6 +497,7 @@ img { max-width: 100%; display: block; }
   font-family: 'Neue Montreal', sans-serif;
   font-size: 1.4rem;
   color: var(--red);
+  margin-left: auto;
 }
 
 .combo-badge {
