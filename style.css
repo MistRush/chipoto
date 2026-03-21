@@ -479,6 +479,10 @@ img { max-width: 100%; display: block; }
   font-size: 1.3rem;
   color: var(--white);
   margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
 }
 .ingredients {
   color: rgba(255,255,255,0.55);
